@@ -1,0 +1,43 @@
+{
+  "Marijuana/Retail/Retail Store/Renewal": {
+    "ApplicationSpecificInfoUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Record Parcel Automation",
+          "operators": {
+            
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          
+        },
+        "action": {
+          "copyTo": "Record",
+          "copyGISData": [
+            {
+              "service": "ADMA_GIS",
+              "layer": "Parcels",
+              "attribute": "ADDRESS",
+              "mappingIdField": "FID",
+              "field": "STREET NAME"
+            },
+            {
+              "service": "ADMA_GIS",
+              "layer": "Parcels",
+              "attribute": "OFFICEAREA",
+              "mappingIdField": "FID",
+              "field": "BASIN NAME"
+            }
+          ],
+          "updateReferenceParcel": true,
+          "copyConditions": false,
+          "updateOwnerData": true,
+          "contactType": "Applicant",
+          
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

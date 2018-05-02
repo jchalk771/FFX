@@ -1,0 +1,60 @@
+{
+  "Marijuana/Retail/Retail Store/Renewal": {
+    "ApplicationSpecificInfoUpdateBefore": [
+      {
+        "preScript": " ",
+        "metadata": {
+          "description": "required document",
+          "operators": {
+            
+          }
+        },
+        "criteria": {
+          "customLists": [
+            {
+              "tableName": "CUSTOM LIST",
+              "columnName": "Item Numer",
+              "value": "12345"
+            },
+            {
+              "tableName": "CUSTOM LIST",
+              "columnName": "Item Description",
+              "value": "haetham"
+            }
+          ],
+          "contactFields": {
+            "contactType": "Applicant"
+          },
+          "lpFields": {
+            "licType": "Engineer"
+          },
+          "customFields": {
+            "Job Value": "100",
+            "Code": "KBC 2012"
+          },
+          "addressFields": {
+            "zip": "12345"
+          },
+          "parcelFields": {
+            "ParcelNumber": "00800"
+          },
+          "task": [
+            
+          ],
+          "status": [
+            
+          ]
+        },
+        "action": {
+          "requiredDocuments": [
+            "Letters",
+            "Plans"
+          ],
+          "requirementType": "STANDARD",
+          "validationMessage": "Document Are Required"
+        },
+        "postScript ": " "
+      }
+    ]
+  }
+}

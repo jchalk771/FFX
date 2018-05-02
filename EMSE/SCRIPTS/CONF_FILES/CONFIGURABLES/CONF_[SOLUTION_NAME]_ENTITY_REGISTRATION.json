@@ -1,0 +1,25 @@
+{
+  "Marijuana/Entity/Prequalification/Application": {
+    "WorkflowTaskUpdateAfter/Intake/Accepted": [
+      {
+        "preScript": "",
+        "contactTypeRecordTypeMapping": {
+          "Authorized Agent": "Marijuana/Entity/Registration/Individual",
+          "Affiliate Individual": "Marijuana/Entity/Registration/Individual",
+          "Affiliate Business": "Marijuana/Entity/Registration/Business",
+          "Business Entity": "Marijuana/Entity/Registration/Business",
+          "Employee": "Marijuana/Entity/Registration/Employee"
+        },
+        "childTempRecord": true,
+        "childRecordStatus": "Pending",
+        "copyCF": false,
+        "copyCT": false,
+        "CFGroupsToCopy":"",
+        "recordIdField": "",
+        "notificationTemplate": "SS_APP_CREATED",
+        "notificationReport": "",
+        "postScript": ""
+      }
+    ]
+  }
+}

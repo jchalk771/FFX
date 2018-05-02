@@ -1,0 +1,57 @@
+{
+  "Building/Commercial/abc/xyz": {
+    "Pageflow": [
+      {
+        "metadata": {
+          "description": "To skip ACA page based on some rules",
+          "operators": {
+            
+          }
+        },
+        "criteria": {
+          "customFields": {
+            "Street Name": "Gardens"
+          },
+          "contactFields": {
+            "contactType": "Applicant",
+            "firstName": "yazan"
+          },
+          "customLists": [
+            {
+              "tableName": "PARTNERS",
+              "columnName": "First Name",
+              "value": "yazan"
+            },
+            {
+              "tableName": "PARTNERS",
+              "columnName": "Last Name",
+              "value": "barghouth"
+            },
+            {
+              "tableName": "BUSINESS ACTIVITIES",
+              "columnName": "Acticity Desc",
+              "value": "export"
+            }
+          ],
+          "lpFields": {
+            "licType": "Architect",
+            "firstName": "yazan"
+          },
+          "addressFields": {
+            "streetName": "Madena"
+          },
+          "parcelFields": {
+            "Block": "1122",
+            "ParcelNumber": "00800"
+          }
+        },
+        "preScript": "",
+        "action": {
+          "step": "1",
+          "page": "2"
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

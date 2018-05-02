@@ -1,0 +1,20 @@
+{
+    "Building/Commercial/New Construction/NA": {
+      "ApplicationSpecificInfoUpdateAfter": {
+        "parentLicense": "Building/Commercial/New Construction/NA",
+        "issuedStatus": "Issued",
+        "copyCF": true,
+        "copyCT": true,
+        "expirationType": "Function",
+        "customExpirationFunction": "calcExpirationDateByZip",
+        "expirationPeriod": "30",
+        "refLPType": "Consultant",
+        "contactType": "Applicant",
+        "createLP": true,
+        "licenseTable": "CUSTOM LIST",
+        "childLicense": "Building/Commercial/New Construction/NA",
+        "recordIdField": "Item Description"
+          
+      }
+    }
+  }

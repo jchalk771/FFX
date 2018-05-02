@@ -1,0 +1,9 @@
+{
+    "Marijuana/Combo/Cultivation/Renewal": {
+        "WorkflowTaskUpdateAfter/Issuance/Issued": {
+            "issuedStatus": "Active",
+            "expirationType": "Expiration Code",
+            "expirationPeriod": "MJ_GENERAL"
+        }
+    }
+}

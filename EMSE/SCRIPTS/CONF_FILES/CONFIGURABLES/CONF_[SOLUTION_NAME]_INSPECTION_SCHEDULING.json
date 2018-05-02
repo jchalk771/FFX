@@ -1,0 +1,71 @@
+{
+  "Building/Commercial/New/NA": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "To perform a set of action based on inspection result",
+          "operators": {
+            
+          }
+        },
+        "criteria": {
+          "isCreatedByACA": false,
+          "task": [
+            "Issuance"
+          ],
+          "status": [
+            "Ready For Inspection"
+          ],
+          "contactFields": {
+            "contactType": "Applicant",
+            "firstName": "Value"
+          },
+          "customFields ": {
+            "field1": "Value 1",
+            "field2": "Value 2"
+          },
+          "customLists": [
+            {
+              "tableName": "tbl1",
+              "columnName": "col1",
+              "value": "val1"
+            }
+          ],
+          "addressFields": {
+            "zip": "12345"
+          },
+          "lpFields": {
+            "licType": "Engineer"
+          }
+        },
+        "preScript": "",
+        "action": {
+          "inspectionType": "Final Inspection",
+          "rangeType": "Days",
+          "range": 5,
+          "assignment": "manual",
+          "inspector": "IMOORE",
+          "department": "AGENCY/NA/NA/NA/NA/NA/NA",
+          "comments":"by auto script",
+          "feeItems": [
+            {
+              "schedule": "LIC_INSP",
+              "period": "FINAL",
+              "code": "INSP_001",
+              "qty": 1,
+              "invoice": "Y"
+            },
+            {
+              "feeSchedule": "LIC_INSP",
+              "feePeriod": "FINAL",
+              "code": "INSP_002",
+              "qty": 3,
+              "invoice": "Y"
+            }
+          ]
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

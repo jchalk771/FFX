@@ -1,0 +1,19 @@
+{
+  "Marijuana/Entity/Prequalification/Application": {
+    "ApplicationSpecificInfoUpdateAfter": [
+      {
+        "preScript": "",
+        "copyGISData": {
+	          "BPTALM|Parcel_Owner|OwnerName": "OwnerFullName",
+	          "BPTALM|Parcel_Owner|OwnerAddress": "Address1"
+	        },
+	    "mappingIdField":"FID",
+        "updateRecordOwnerFromRef": "N",
+        "updateReferenceOwnerFromRec": "Y",
+        "retainHistory": "Y",
+        "copyConditions": "N",
+        "postScript": ""
+      }
+    ]
+  }
+}

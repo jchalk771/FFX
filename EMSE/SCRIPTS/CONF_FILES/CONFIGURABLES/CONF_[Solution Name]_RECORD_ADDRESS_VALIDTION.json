@@ -1,0 +1,56 @@
+{
+  "Building/Commercial/New Construction/NA": {
+    "ApplicationSpecificInfoUpdateBefore": [
+      {
+        "metadata": {
+          "description": "To validate related Address based on the provided JSON",
+          "operators": {
+            
+          }
+        },
+        "criteria": {
+          
+        },
+        "preScript": " ",
+        "action": {
+          "recordTypeCheck": [
+            {
+              "type": "Building/Projects/Project Creation Request3/BPROJ",
+              "status": "Submitted"
+            },
+            {
+              "type": "Building/Commercial/New Construction/NA33",
+              "status": "Issued"
+            }
+          ],
+          "recordTypeRequired": [
+            {
+              "type": "Building/Projects/Project Creation Request2/BPROJ",
+              "status": "Submitted"
+            },
+            {
+              "type": "Building/Commercial/New Construction/NA33",
+              "status": "Issued"
+            }
+          ],
+          "fieldValidation": {
+            "streetName": "Street abc"
+          },
+          "bufferCheck": [
+            {
+              "service": "GIS_SVC_NAME",
+              "layer": "Historical",
+              "distance": "1000"
+            },
+            {
+              "service": "GIS_SVC_NAME",
+              "layer": "School",
+              "distance": "500"
+            }
+          ]
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "Marijuana/Combo/Testing Facility/Renewal": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Updates renewal record parent status, LPs, expiration dates, with ability to copy components",
+          "operators": {
+          }
+        },
+        "criteria": {
+          "task": ["Intake"],
+          "status": ["In Progress"]
+        },
+        "preScript": "",
+        "action": {
+          "issuedRecordStatus": "Active",
+          "issuedExpirationStatus": "Active",
+          "issuedLPStatus": "",
+          "expirationType": "Days",
+          "expirationPeriod": "356",
+          "customExpirationFunction": "",
+          "copyComponents": [
+            
+          ]
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

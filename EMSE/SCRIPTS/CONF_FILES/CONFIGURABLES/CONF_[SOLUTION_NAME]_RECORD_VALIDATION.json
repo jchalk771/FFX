@@ -1,0 +1,71 @@
+{
+  "Marijuana/Retail/Retail Store/Renewal": {
+    "ApplicationSpecificInfoUpdateBefore": [
+      {
+        "metadata": {
+          "description": "test records",
+          "operators": {
+            
+          }
+        },
+        "preScript": " ",
+        "criteria": {
+          "customFields": {
+            "Trade Name": "test"
+          },
+          "customLists": [
+            {
+              "tableName": "Ownership Information",
+              "columnName": "Name",
+              "value": "33"
+            }
+          ],
+          "requiredLP": [
+            "test haetham"
+          ],
+          "validateLP": false,
+          "requiredContact": [
+            "Applicant"
+          ],
+          "allowBalance": true,
+          "parentRequired": [
+            "Marijuana/Combo/Testing Facility/Application"
+          ],
+          "parentRecordStatus": [
+            "Active"
+          ],
+          "childRequired": [
+            "Marijuana/Combo/Testing Facility/Renewal"
+          ],
+          "childRecordStatus": [
+            "Renewed"
+          ],
+          "requiredField": [
+            "Name"
+          ],
+          "taskRequired": [
+            "Accepted"
+          ],
+          "inspectionRequired": [
+            "Initial Facility Insp"
+          ],
+          "assignedUserRequired": false,
+          "assignedWorkflowTaskUser": false,
+          "RowRequiredInASIT": [
+            "OWNERSHIP INFORMATION",
+            "TESTHAETHAM"
+          ],
+          "numberLP": 1,
+          "numberContacts": 1,
+          
+        },
+        "action": {
+          "validationMessage": "",
+          
+        },
+        "postScript": ""
+      }
+    ],
+    
+  }
+}

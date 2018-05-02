@@ -1,0 +1,20 @@
+{
+  "Building/Commercial/Company/amman05": {
+    "ApplicationSpecificInfoUpdateBefore": [
+      {
+        "preScript": "",
+        "duplicateRecordType": "Building/Commercial/Company/amman05",
+        "duplicateRecordTypeStatus":"Awaiting Client Reply",
+        "requiredRecordType": "Building/Commercial/xxx/yyy",
+        "requiredRecordTypeStatus":"",
+        "cancelSubmissionFields": [
+          {
+            "OwnerFullName": "Saba Fakhry",
+            "MailZip": "12345"
+          }
+        ],
+        "postScript": ""
+      }
+    ]
+  }
+}

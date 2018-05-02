@@ -1,0 +1,42 @@
+{
+  "Marijuana/Retail/Retail Store/Renewal": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "",
+        "metadata": {
+          "description": "Meeting Automation",
+          "operators": {
+            
+          }
+        },
+        "criteria": {
+          "task": [
+            "Intake"
+          ],
+          "status": [
+            "Pending"
+          ]
+        },
+        "action": {
+          "meetingAction": "create",
+          "meetingCalendarID": "Planning Commission",
+          "meetingCalendarName": "Planning Commission",
+          "meetingName": "meeting name",
+          "meetingBody": "meeting body",
+          "meetingSubject": "meeting subject",
+          "meetingLocation": "Planning Commission Room",
+          "meetingStatus": "",
+          "meetingDate": "10/12/2018",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "comments": "test",
+          "reason": "test",
+          "emailTo": "Owner",
+          "emailNotificationTemplate": "MESSAGE_NOTICE_MEETING_REMINDER",
+          "addOutlookMeetingFor": "haitham"
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

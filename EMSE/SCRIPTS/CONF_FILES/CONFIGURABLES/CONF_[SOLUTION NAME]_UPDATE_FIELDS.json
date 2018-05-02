@@ -1,0 +1,43 @@
+{
+  "Marijuana/Retail/Retail Store/Renewal": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "",
+        "metadata": {
+          "description": "update fields",
+          "operators": {
+            
+          }
+        },
+        "criteria": {
+          "customFields": {
+            "Trade Name": "test"
+          },
+          "customLists": [
+            {
+              "tableName": "OWNERSHIP INFORMATION",
+              "columnName": "Name",
+              "value": "33"
+            },
+            
+          ],
+          "task": [
+            
+          ],
+          "status": [
+            
+          ],
+          
+        },
+        "action": {
+          "valueSource": " ",
+          "sourceName": "ACA_CONFIGS/AGENCY_NAME",
+          "customFieldToUpdate": "EIN#",
+          "customListToUpdate": "TESTHAETHAM/TestHaetham",
+          
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "Marijuana/Entity/Prequalification/Application": {
+    "WorkflowTaskUpdateAfter/Application Issuance/Approved": [
+      {
+        "preScript": "",
+        "customFieldGroup": "LICENSE TYPES",
+        "customFieldRecordTypeMapping": {
+          "Marijuana Cultivation Facility": "Marijuana/Combo/Cultivation/Application",
+          "Medical Marijuana Center": "Marijuana/Medical/Medical Center/Application",
+          "Marijuana Dispensary": "Marijuana/Combo/Dispensary/Application",
+          "Marijuana Processing Facility": "Marijuana/Combo/Processor/Application",
+          "Optional Premises Cultivation": "Marijuana/Retail/Optional Prem Culti/Application",
+          "Secure Marijuana Transporter": "Marijuana/Combo/Secure Transporter/Application",
+          "Retail Marijuana Store": "Marijuana/Retail/Retail Store/Application",
+          "Marijuana Testing Facility": "Marijuana/Combo/Safety Compliance/Application",
+          "Temporary Cultivation Facility": "Marijuana/Combo/Cultivation/Application",
+          "Marijuana Microbusiness": "Marijuana/Combo/Microbusiness/Application"
+        },
+        "childTempRecord": true,
+        "childRecordStatus": "Pending",
+        "CFGroupsToCopy":"APPLICANT INFORMATION",
+        "copyCF": true,
+        "copyCT": false,
+        "recordIdField": "",
+        "postScript": ""
+      }
+    ]
+  }
+}

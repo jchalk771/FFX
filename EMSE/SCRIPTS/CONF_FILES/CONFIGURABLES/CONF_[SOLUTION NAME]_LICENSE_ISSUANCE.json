@@ -1,0 +1,43 @@
+{
+  "Marijuana/Combo/Testing Facility/License": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "preScript": "",
+        "metadata": {
+          "description": "License Issuance",
+          "operators": {
+            
+          }
+        },
+        "criteria": {
+          "task": [
+            "License Status"
+          ],
+          "status": [
+            "Active"
+          ]
+        },
+        "action": {
+          "parentLicense": "Marijuana/Combo/Testing Facility/License",
+          "issuedStatus": "Issued",
+          "copyCF": true,
+          "copyCT": true,
+          "copyEducation": true,
+          "copyContinuingEducation": true,
+          "copyExamination": true,
+          "copyContacts": true,
+          "expirationType": "Days",
+          "customExpirationFunction": "",
+          "expirationPeriod": "30",
+          "refLPType": "Architect",
+          "contactType": "Employee",
+          "createLP": true,
+          "licenseTable": "HATEST",
+          "childLicense": "Marijuana/Combo/Testing Facility/License",
+          "recordIdField": "TEST haetham"
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

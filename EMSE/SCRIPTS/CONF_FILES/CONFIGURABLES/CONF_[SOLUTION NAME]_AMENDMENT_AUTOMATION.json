@@ -1,0 +1,32 @@
+{  
+   "Marijuana/Amendment/License Modification/NA":{  
+      "ApplicationSpecificInfoUpdateAfter":[  
+         {  
+            "metadata":{  
+               "description":"perform actions related to amendment, on parent and amendment record(s)",
+               "operators":{  
+
+               }
+            },
+            "prescript":"",
+            "criteria":{  
+
+            },
+            "action":{  
+               "incrementParentID":false,
+               "assignWorkflow":"MJ_LIC_MODIFY",
+               "feeIncrementStart":2,
+               "feeAssess":"",
+               "feeSchedule":"",
+               "feeItem":"",
+               "feeQty":"0",
+               "deActivateParentTasks":false,
+               "activateParentTask":[  
+                  "Modification Review"
+               ]
+            },
+            "postScript":""
+         }
+      ]
+   }
+}

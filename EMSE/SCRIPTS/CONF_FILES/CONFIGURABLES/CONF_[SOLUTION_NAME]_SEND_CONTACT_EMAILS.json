@@ -1,0 +1,36 @@
+{  
+   "Marijuana/Enforcement/Complaint/NA":{  
+      "ApplicationSpecificInfoUpdateAfter":[  
+         {  
+            "metadata":{  
+               "description":"Sends Email Template to necessary Contact Types with available parameters",
+               "operators":{  
+
+               }
+            },
+            "preScript":"",
+            "criteria":{  
+               "customFields":{  
+                  "Notify Complaintant":"Yes"
+               }
+            },
+            "action":{  
+               "notificationTemplate":"MESSAGE_NOTICE_PUBLIC WORKS",
+               "notificationReport":"",
+               "notifyContactTypes":[  
+                  "Applicant"
+               ],
+               "additionalEmailsTo":[  
+                  "email1@hostAbc.com"
+               ],
+               "url4ACA":"",
+               "fromEmail":"",
+               "createFromParent":false,
+               "reportingInfoStandards":"",
+               "balanceAllowed":false
+            },
+            "postScript":""
+         }
+      ]
+   }
+}

@@ -1,0 +1,83 @@
+{
+  "Marijuana/Combo/Testing Facility/License": {
+    "WorkflowTaskUpdateAfter": [
+      {
+        "metadata": {
+          "description": "test records",
+          "operators": {
+            
+          }
+        },
+        "preScript": "",
+        "criteria": {
+          "customFields": {
+            "Gross Annual Sales": "12"
+          },
+          "task": [
+            "License Status"
+          ],
+          "status": [
+            "Active"
+          ],
+          "workFlow": {
+            
+          },
+          "isCreatedByACA": false,
+          "isACAEvent": false,
+          "recordStatus": [
+            "Submitted"
+          ],
+          "balanceAllowed": true,
+          
+        },
+        "action": {
+          "activateTask": [
+            
+          ],
+          "daysOut": "10",
+          "useCalendarDays": false,
+          "deactivateTask": [
+            
+          ],
+          "deleteTask": [
+            
+          ],
+          "updateTask": [
+            {
+              "task": "Permit Issuance",
+              "status": "Issued"
+            }
+          ],
+          "invoiceFees": "",
+          "createChild": "Marijuana/Combo/Testing Facility/Application",
+          "createParent": "",
+          "addCondition": "",
+          "addConditionSeverity": " ",
+          "addConditionType": "",
+          "removeConditionType": "",
+          "removeCondition": "",
+          "addComment": "test Status",
+          "newStatus": "",
+          "assignToUserID": "",
+          "assessFees": [
+            {
+              "feeSchedule": "",
+              "feeCode": "",
+              "feeQuantity": 1,
+              "feeInvoice": "",
+              "feePeriod": ""
+            }
+          ],
+          "updateExpDate": {
+            "expirationType": "Days",
+            "expirationPeriod": "10",
+            "destination": "ExpDate",
+            "asiName": "RENEWAL INFO.Next Notification Date",
+            "customExpirationFunction": "testFunction"
+          }
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "Marijuana/Entity/Prequalification/Application": {
+    "ConvertToRealCAPAfter": [
+      {
+        "metadata": {
+          "description": "To apply several actions based on the provided JSON",
+          "operators": {
+            
+          }
+        },
+        "criteria": {
+          "feesPaid": false,
+          "customFields": {
+            "Street Name": "Gardens"
+          },
+          "contactFields": {
+            "contactType": "Applicant",
+            "firstName": "yazan"
+          },
+          "customLists": [
+            {
+              "tableName": "PARTNERS",
+              "columnName": "First Name",
+              "value": "yazan"
+            },
+            {
+              "tableName": "PARTNERS",
+              "columnName": "Last Name",
+              "value": "barghouth"
+            },
+            {
+              "tableName": "BUSINESS ACTIVITIES",
+              "columnName": "Acticity Desc",
+              "value": "export"
+            }
+          ],
+          "lpFields": {
+            "licType": "Architect",
+            "firstName": "yazan"
+          },
+          "addressFields": {
+            "streetName": "Madena"
+          },
+          "parcelFields": {
+            "Block": "1122",
+            "ParcelNumber": "00800"
+          }
+        },
+        "preScript": "",
+        "action": {
+          "applicationStatus": "Issued",
+          "updateTask": [
+            {
+              "task": "Intake",
+              "status": "Accepted"
+            }
+          ]
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

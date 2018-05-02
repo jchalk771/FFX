@@ -1,0 +1,57 @@
+{
+  "Building/Commercial/Company/NA": {
+    "ApplicationSpecificInfoUpdateAfter": [
+      {
+        "metadata": {
+          "description": "Automated Actions on Address and Ref-Address",
+          "operators": {
+            
+          }
+        },
+        "criteria": {
+          
+        },
+        "preScript": "",
+        "action": {
+          "copyGISData": [
+            {
+              "service": "ADMA_GIS",
+              "layer": "Parcels",
+              "attribute": "ADDRESS",
+              "mappingIdField": "FID",
+              "field": "STREET NAME"
+            },
+            {
+              "service": "ADMA_GIS",
+              "layer": "Parcels",
+              "attribute": "OFFICEAREA",
+              "mappingIdField": "FID",
+              "field": "BASIN NAME"
+            }
+          ],
+          "recordTypeCreate": [
+            {
+              "type": "Building/Commercial/Company/Rec1",
+              "status": "Open",
+              "relationship": "child",
+              "createIfExists": "no"
+            },
+            {
+              "type": "Building/Commercial/Company/Rec2",
+              "status": "Accepted",
+              "relationship": "parent",
+              "createIfExists": "no"
+            }
+          ],
+          "updateReferenceAddress": true,
+          "geoCodeAdrress": "ESRI",
+          "geoCodeInfo": "http://mycity.houstontx.gov/ArcGIS/rest/services/Geocode/GeocodeServer/findAddressCandidates",
+          "copyConditions": true,
+          "updateContactData": true,
+          "contactType": "Applicant"
+        },
+        "postScript": ""
+      }
+    ]
+  }
+}

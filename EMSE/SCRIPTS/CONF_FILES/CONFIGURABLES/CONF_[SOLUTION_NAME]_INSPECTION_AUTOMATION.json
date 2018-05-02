@@ -1,0 +1,54 @@
+{
+  "Marijuana/Combo/Testing Facility/Application": {
+    "InspectionResultSubmitAfter": [
+      {
+        "metadata": {
+          "description": "To perform a set of action based on inspection result",
+          "operators": {
+            "caseFailureStatus":"!="
+          }
+        },
+        "criteria": {
+          "inspectionTypePerformed": [
+            "Initial Facility Insp"
+          ],
+          "inspectionResult": [
+            "Passed"
+          ]
+        },
+        "action": {
+          "costRangeType": "Days",
+          "costRange": 0,
+          "costFeeType": "",
+          "costFeeSchedule": "",
+          "costFeeName": "",
+          "costFeeAmount": 0,
+          "newAppStatus": "In Review",
+          "caseCreationType": "Status",
+          "caseFailureStatus": [
+            "Passed"
+          ],
+          "caseType": "Marijuana/Combo/Testing Facility/Application",
+          "caseCopyComments": false,
+          "inspectionType": "Marijuana Inspector",
+          "inspectionCopyComment": false,
+          "rangeType": "Days",
+          "range": "10",
+          "sameInspector": false,
+          "createCondition": "",
+          "createConditionType": "",
+          "createConditionSeverity": "",
+          "feeSchedule": "",
+          "feeName": "",
+          "feeAmount": 0,
+          "taskName": "Intake",
+          "taskStatus": "In Progress",
+          "removeCondition": "",
+          "removeConditionType": ""
+        },
+        "preScript": "",
+        "postScript": ""
+      }
+    ]
+  }
+}
